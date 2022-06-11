@@ -12,18 +12,46 @@
 body{
    overflow-y: hidden;
    overflow-x: hidden;
+  
 }
+.swiper-container-first .swiper-slide {
+    height: auto;
+    max-height: 600px;
+}
+
+
 .swiper-container-first img {
 width: 100%;
 height: 100%;
 object-fit: cover;
+background-position: top;
+
+
 }
 .swiper-container-first .swiper-button {
+    display: none;
  width: 55px;
  height: 55px;
  border-radius: 50%;
  background-color: rgba(255, 255, 255, 0.3);
- transform: translateY(-50%);
+ transform: translateY(-80%);
  transition: .03s;
- color:black
+ color:black;
 }
+@media (min-width:1025px) {
+    .swiper-container-first .swiper-button {
+        display: flex;
+    }  
+}
+.swiper-container-first .swiper-button:hover {
+background-color: rgba(255, 255, 255, 0.7);
+}
+.swiper-container-first .swiper-button::after {
+font-size: 20px;
+font-weight: bold;
+    }
+    .swiper-container-first .swiper-button-disabled {
+display: none;
+
+    }
+    
