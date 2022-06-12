@@ -15,5 +15,15 @@ const firstSlider = {
 	scrollbar: {
 		el: '.swiper-scrollbar',
 	},
+	breakpoints: {
+		1025: {
+			slidesPerView: 2,
+			spaceBetween: 10
+		},
+		1300: {
+			slidesPerView: 2,
+			spaceBetween: 5
+		}
+	}
 };
 new Swiper('.swiper-container-first', firstSlider);
